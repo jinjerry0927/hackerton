@@ -1,39 +1,48 @@
-/* 태풍 페이지 전용 스타일 */
+/* 박스 레이아웃 */
 .typhoon-info-wrapper {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  
-  .typhoon-warning, .typhoon-map {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .typhoon-warning h3, .typhoon-map h3 {
-    margin-bottom: 15px;
-  }
-  
-  .typhoon-warning ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .typhoon-warning li {
-    margin-bottom: 10px;
-  }
-  
-  .typhoon-map-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-  }
-  
+  display: flex;
+  gap: 20px; /* 두 박스 사이 여백 */
+  justify-content: space-between;
+}
+
+.typhoon-path, .typhoon-damage {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 박스 그림자 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 박스 테두리 */
+.box-with-line {
+  border: 2px solid #2c3e50;
+}
+
+/* 제목 스타일 */
+.typhoon-path h3, .typhoon-damage h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* 태풍 경로도 이미지 */
+.typhoon-path-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* 리스트 스타일 */
+.typhoon-path ul, .typhoon-damage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.typhoon-path li, .typhoon-damage li {
+  margin-bottom: 10px;
+}

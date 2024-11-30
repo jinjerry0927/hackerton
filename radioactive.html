@@ -35,21 +35,68 @@
 
     <main class="content">
       <div class="radioactive-info-wrapper">
-        <!-- 방사능 경고 -->
-        <div class="radioactive-warning">
-          <h3>방사능 경고</h3>
-          <p>현재 경주시 인근 지역에서 방사능 수치가 상승하고 있습니다.</p>
-          <ul>
-            <li><strong>현재 수치:</strong> 0.15 μSv/h</li>
-            <li><strong>안전 기준:</strong> 0.10 μSv/h</li>
-            <li><strong>권고 사항:</strong> 실내에 머무르며 환기 제한</li>
-          </ul>
+        <!-- 지역별 방사능 수치 박스 -->
+        <div class="radioactive-level box-with-line">
+          <h3>지역별 방사능 수치</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>방사능 수치 (μSv/h)</th>
+                <th>상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>경주시 중심</td>
+                <td>0.10</td>
+                <td>정상</td>
+              </tr>
+              <tr>
+                <td>불국사 지역</td>
+                <td>0.15</td>
+                <td>정상</td>
+              </tr>
+              <tr>
+                <td>양동마을</td>
+                <td>0.25</td>
+                <td>주의</td>
+              </tr>
+              <tr>
+                <td>안강읍</td>
+                <td>0.40</td>
+                <td>위험</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>0.35</td>
+                <td>위험</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- 방사능 영향 지도 -->
-        <div class="radioactive-map">
-          <h3>방사능 영향 지역</h3>
-          <img src="radioactive-map.png" alt="방사능 영향 지역 지도" class="radioactive-map-image">
+        <!-- 과거 방사능 누출 사건 박스 -->
+        <div class="radioactive-history box-with-line">
+          <h3>과거 방사능, 누출 사건</h3>
+          <ul>
+            <li>
+              <strong>2023년 5월 12일:</strong> 불국사 근처 방사능 누출.
+              <br>원인: <em>폐기물 저장소의 파손</em>, 누출량: <em>0.3μSv/h</em>.
+            </li>
+            <li>
+              <strong>2021년 10월 7일:</strong> 감포읍 원자력 발전소 경미한 방사능 유출.
+              <br>대응: <em>24시간 내 긴급 복구 완료</em>, 영향 없음.
+            </li>
+            <li>
+              <strong>2019년 3월 25일:</strong> 경주시 북부 지역 방사능 측정치 상승.
+              <br>원인: <em>산업 폐기물 처리장 오작동</em>.
+            </li>
+            <li>
+              <strong>2016년 8월 15일:</strong> 감포읍 원전 냉각수 유출 사고.
+              <br>복구 기간: <em>3주</em>, 영향 지역: <em>10km 이내</em>.
+            </li>
+          </ul>
         </div>
       </div>
     </main>

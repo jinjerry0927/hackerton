@@ -35,21 +35,58 @@
 
     <main class="content">
       <div class="landslide-info-wrapper">
-        <!-- 산사태 경고 -->
-        <div class="landslide-warning">
-          <h3>산사태 경고</h3>
-          <p>경주시 산악 지역에서 산사태 위험이 높아지고 있습니다.</p>
-          <ul>
-            <li><strong>위험 지역:</strong> 불국사 뒷산, 토함산 일대</li>
-            <li><strong>원인:</strong> 최근 집중호우로 인해 지반 약화</li>
-            <li><strong>대피 권고:</strong> 산악 지역 주민과 등산객</li>
-          </ul>
+        <!-- 지역별 산사태 알림 박스 -->
+        <div class="landslide-alert box-with-line">
+          <h3>지역별 산사태 알림</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>상태</th>
+                <th>설명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>경주시 중심</td>
+                <td>정상</td>
+                <td>산사태 가능성 없음</td>
+              </tr>
+              <tr>
+                <td>불국사 지역</td>
+                <td>주의</td>
+                <td>산사태 주의 필요</td>
+              </tr>
+              <tr>
+                <td>양동마을</td>
+                <td>정상</td>
+                <td>산사태 가능성 없음</td>
+              </tr>
+              <tr>
+                <td>안강읍</td>
+                <td>위험</td>
+                <td>즉각 대피 필요</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>주의</td>
+                <td>산사태 가능성 있음</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- 산사태 영향 지도 -->
-        <div class="landslide-map">
-          <h3>산사태 위험 지역</h3>
-          <img src="landslide-map.png" alt="산사태 위험 지역 지도" class="landslide-map-image">
+        <!-- 산사태 예측 가능 지역 박스 -->
+        <div class="landslide-prediction box-with-line">
+          <h3>산사태 예측 가능 지역</h3>
+          <p>인공지능 분석과 지난 데이터를 통해 산사태 위험 지역을 예측 중입니다...</p>
+          <ul>
+            <li><strong>불국사:</strong> 60% 위험</li>
+            <li><strong>안강읍:</strong> 90% 위험</li>
+            <li><strong>감포읍:</strong> 75% 위험</li>
+            <li><strong>양동마을:</strong> 30% 위험</li>
+            <li><strong>경주시 중심:</strong> 10% 위험</li>
+          </ul>
         </div>
       </div>
     </main>

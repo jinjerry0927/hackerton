@@ -35,22 +35,68 @@
 
     <main class="content">
       <div class="earthquake-info-wrapper">
-        <!-- 지진 경고 -->
-        <div class="earthquake-warning">
-          <h3>지진 경고</h3>
-          <p>경주시 인근에서 규모 5.2의 지진이 발생하였습니다.</p>
-          <ul>
-            <li><strong>발생 시간:</strong> 10:30 AM</li>
-            <li><strong>진앙지:</strong> 경주시 동쪽 15km</li>
-            <li><strong>깊이:</strong> 10km</li>
-            <li><strong>진도:</strong> 최대 진도 5 (강한 흔들림)</li>
-          </ul>
+        <!-- 현재 지역별 진도 조회 박스 -->
+        <div class="earthquake-intensity box-with-line">
+          <h3>현재 지역별 진도 조회</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>현재 진도</th>
+                <th>피해 가능성</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>경주시 중심</td>
+                <td>3.5</td>
+                <td>미미함</td>
+              </tr>
+              <tr>
+                <td>불국사 지역</td>
+                <td>4.0</td>
+                <td>경미한 피해 가능</td>
+              </tr>
+              <tr>
+                <td>양동마을</td>
+                <td>3.2</td>
+                <td>없음</td>
+              </tr>
+              <tr>
+                <td>안강읍</td>
+                <td>4.5</td>
+                <td>약간의 피해 가능</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>5.0</td>
+                <td>건물 균열 가능</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <!-- 지진 영향 지도 -->
-        <div class="earthquake-map">
-          <h3>지진 영향 지역</h3>
-          <img src="earthquake-map.png" alt="지진 영향 지역 지도" class="earthquake-map-image">
+        <!-- 과거 지진 활동 박스 -->
+        <div class="earthquake-history box-with-line">
+          <h3>과거 지진 활동</h3>
+          <ul>
+            <li>
+              <strong>2023년 3월 15일:</strong> 경주시 북부 진도 4.8 지진 발생.
+              <br>피해: <em>건물 균열 15건</em>, 복구 비용 <em>1억 원</em>.
+            </li>
+            <li>
+              <strong>2021년 8월 23일:</strong> 감포읍 진도 5.2 지진 기록.
+              <br>피해: <em>주택 3채 붕괴</em>, 인명 피해 없음.
+            </li>
+            <li>
+              <strong>2019년 11월 12일:</strong> 불국사 지역 진도 3.8 지진.
+              <br>경미한 피해: <em>나무 쓰러짐</em>.
+            </li>
+            <li>
+              <strong>2016년 9월 12일:</strong> 경주시 전역 진도 5.8 지진 발생.
+              <br>피해: <em>대규모 건물 손상</em>, 대피 인원 <em>20,000명</em>.
+            </li>
+          </ul>
         </div>
       </div>
     </main>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>홍수 - 경주 재난 알림이</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="flood_styles.css">
+  <link rel="stylesheet" href="flood.styles.css">
 </head>
 <body>
   <header class="top-bar">
@@ -35,23 +35,70 @@
 
     <main class="content">
       <div class="flood-info-wrapper">
-        <!-- 홍수 경고 -->
-        <div class="flood-warning">
-          <h3>홍수 경고</h3>
-          <p>현재 경주시 형산강 지역 홍수 경고가 발령되었습니다.</p>
+        <!-- 경주 지역 강수량 박스 -->
+        <div class="flood-rainfall box-with-line">
+          <h3>경주 지역 강수량</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>1시간 강수량</th>
+                <th>누적 강수량</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>경주시 중심</td>
+                <td>25mm</td>
+                <td>120mm</td>
+              </tr>
+              <tr>
+                <td>불국사 지역</td>
+                <td>30mm</td>
+                <td>140mm</td>
+              </tr>
+              <tr>
+                <td>양동마을</td>
+                <td>20mm</td>
+                <td>110mm</td>
+              </tr>
+              <tr>
+                <td>안강읍</td>
+                <td>15mm</td>
+                <td>100mm</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>10mm</td>
+                <td>85mm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <!-- 과거 특보 박스 -->
+        <div class="flood-alert box-with-line">
+          <h3>과거 특보</h3>
           <ul>
-            <li><strong>위험 지역:</strong> 형산강 주변</li>
-            <li><strong>대피 권고:</strong> 낮은 지역 주민</li>
-            <li><strong>현재 수위:</strong> 5.2m (위험 수준)</li>
+            <li>
+              <strong>2023년 7월 15일:</strong> 집중호우로 경주시 형산강 범람 경고.
+              <br>누적 강수량: <em>300mm</em>, 피해 신고: <em>1,500건</em>
+            </li>
+            <li>
+              <strong>2022년 8월 12일:</strong> 태풍 '힌남노' 북상으로 전 지역 호우주의보.
+              <br>최대 순간 강수량: <em>80mm/h</em>, 대피소 운영.
+            </li>
+            <li>
+              <strong>2021년 9월 3일:</strong> 국지성 호우로 경주시 북부 침수 피해.
+              <br>강수량: <em>200mm</em>, 복구 작업 1주일 소요.
+            </li>
+            <li>
+              <strong>2020년 6월 30일:</strong> 형산강 주변 홍수 경보 발령.
+              <br>피해 지역: <em>불국사 주변</em>, 피해 규모: <em>250가구</em>
+            </li>
           </ul>
         </div>
-
-        <!-- 홍수 지도 -->
-        <div class="flood-map">
-          <h3>홍수 영향 지역</h3>
-          <img src="flood-map.png" alt="홍수 영향 지역 지도" class="flood-map-image">
-        </div>
-      </div>
+      </div>      
     </main>
   </div>
 

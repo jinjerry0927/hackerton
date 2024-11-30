@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>대피소 - 경주 재난 알림이</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="shelter_styles.css">
+  <link rel="stylesheet" href="shelter.styles.css">
 </head>
 <body>
   <header class="top-bar">
@@ -35,26 +35,57 @@
 
     <main class="content">
       <div class="shelter-info-wrapper">
-        <!-- 사용자 위치 기반 대피소 -->
-        <div class="nearest-shelter">
-          <h3>가장 가까운 대피소</h3>
-          <p>사용자 위치를 기반으로 계산 중...</p>
+        <!-- 위치 기반 대피소 찾기 박스 -->
+        <div class="shelter-location box-with-line">
+          <h3>위치 기반 제일 가까운 대피소</h3>
+          <p>현재 위치를 기반으로 가장 가까운 대피소를 계산 중입니다...</p>
           <ul>
-            <li><strong>대피소 이름:</strong> 경주 중앙 대피소</li>
+            <li><strong>추천 대피소:</strong> 불국사 공원 대피소</li>
             <li><strong>거리:</strong> 1.2km</li>
-            <li><strong>소요 시간:</strong> 도보로 약 15분</li>
+            <li><strong>대피소 연락처:</strong> 054-123-4567</li>
+            <li><strong>대피소 수용 가능 인원:</strong> 200명</li>
           </ul>
         </div>
 
-        <!-- 대피소 인원 수 -->
-        <div class="shelter-occupancy">
-          <h3>대피소 인원 수</h3>
-          <p>현재 대피소 상태:</p>
-          <ul>
-            <li><strong>경주 중앙 대피소:</strong> 124명</li>
-            <li><strong>형산강 대피소:</strong> 87명</li>
-            <li><strong>불국사 대피소:</strong> 54명</li>
-          </ul>
+        <!-- 현재 대피소 인원수 및 정보 박스 -->
+        <div class="shelter-status box-with-line">
+          <h3>현재 대피소 정보</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>대피소 이름</th>
+                <th>현재 인원</th>
+                <th>수용 가능 인원</th>
+                <th>비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>불국사 공원 대피소</td>
+                <td>150</td>
+                <td>200</td>
+                <td>정상 운영</td>
+              </tr>
+              <tr>
+                <td>양동 마을회관</td>
+                <td>90</td>
+                <td>150</td>
+                <td>정상 운영</td>
+              </tr>
+              <tr>
+                <td>감포 체육관</td>
+                <td>300</td>
+                <td>500</td>
+                <td>수용 가능</td>
+              </tr>
+              <tr>
+                <td>안강 문화센터</td>
+                <td>120</td>
+                <td>150</td>
+                <td>혼잡</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </main>

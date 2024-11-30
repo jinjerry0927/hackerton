@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지진 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="earthquake.styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item active" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="earthquake-info-wrapper">
+        <!-- 지진 경고 -->
+        <div class="earthquake-warning">
+          <h3>지진 경고</h3>
+          <p>경주시 인근에서 규모 5.2의 지진이 발생하였습니다.</p>
+          <ul>
+            <li><strong>발생 시간:</strong> 10:30 AM</li>
+            <li><strong>진앙지:</strong> 경주시 동쪽 15km</li>
+            <li><strong>깊이:</strong> 10km</li>
+            <li><strong>진도:</strong> 최대 진도 5 (강한 흔들림)</li>
+          </ul>
+        </div>
+
+        <!-- 지진 영향 지도 -->
+        <div class="earthquake-map">
+          <h3>지진 영향 지역</h3>
+          <img src="earthquake-map.png" alt="지진 영향 지역 지도" class="earthquake-map-image">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

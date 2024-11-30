@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍수 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="flood_styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item active" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="flood-info-wrapper">
+        <!-- 홍수 경고 -->
+        <div class="flood-warning">
+          <h3>홍수 경고</h3>
+          <p>현재 경주시 형산강 지역 홍수 경고가 발령되었습니다.</p>
+          <ul>
+            <li><strong>위험 지역:</strong> 형산강 주변</li>
+            <li><strong>대피 권고:</strong> 낮은 지역 주민</li>
+            <li><strong>현재 수위:</strong> 5.2m (위험 수준)</li>
+          </ul>
+        </div>
+
+        <!-- 홍수 지도 -->
+        <div class="flood-map">
+          <h3>홍수 영향 지역</h3>
+          <img src="flood-map.png" alt="홍수 영향 지역 지도" class="flood-map-image">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

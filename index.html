@@ -8,47 +8,46 @@
 </head>
 <body>
   <header class="top-bar">
-    <div class="title">경주 재난 알림이</div>
-    <div class="lang-toggle">KOR / ENG</div>
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
   </header>
 
-  <aside class="menu-bar">
-    <ul>
-      <li>홍수</li>
-      <li>태풍</li>
-      <li>지진</li>
-      <li>산사태</li>
-      <li>안전시설</li>
-      <li>대피소</li>
-    </ul>
-    <div class="real-time-section">
-      <h4>실시간 정보</h4>
-      <ul>
-        <li>실시간 챗봇</li>
-        <li>실시간 현장상황 LIVE</li>
-        <li>위치기반 긴급지원 요청</li>
-      </ul>
-    </div>
-  </aside>
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
 
-  <main class="content">
-    <section class="map-section">
-      <h3>지도</h3>
-      <div class="map-placeholder">[지도 위치]</div>
-    </section>
-    <section class="news-section">
-      <h3>실시간 속보</h3>
-      <ul>
-        <li><strong>10:30</strong> | 경주시 중심가 | "지진 발생, 대피 요망"</li>
-        <li><strong>11:00</strong> | 형산강 주변 | "홍수 위험, 주민 대피 중"</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <h3>형산강 수위 현황</h3>
-    <canvas id="river-level-chart"></canvas>
-  </footer>
+    <main class="content">
+      <div class="map-news-wrapper">
+        <div class="map-section">
+          <h3>지도</h3>
+          <img src="warning.png" alt="경고 이미지" class="map-image">
+        </div>
+        <div class="news-section">
+          <h3>실시간 속보</h3>
+          <ul class="news-list">
+            <li><strong>10:30</strong> | 경주시 중심가 | "지진 발생, 대피 요망"</li>
+            <li><strong>11:00</strong> | 형산강 주변 | "홍수 위험, 주민 대피 중"</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
 
   <script src="scripts.js"></script>
 </body>

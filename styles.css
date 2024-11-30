@@ -1,95 +1,168 @@
-/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .lang-toggle {
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .menu-bar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    float: left;
-    height: calc(100vh - 60px);
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-bar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menu-bar li {
-    margin-bottom: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .real-time-section {
-    margin-top: 20px;
-  }
-  
-  .real-time-section h4 {
-    color: red;
-  }
-  
-  .content {
-    margin-left: 220px;
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .map-section, .news-section {
-    flex: 1;
-  }
-  
-  .map-placeholder {
-    background-color: #ddd;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-  }
-  
-  .news-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .news-section li {
-    margin-bottom: 10px;
-  }
-  
-  .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-  }
-  
-  canvas {
-    width: 100%;
-    height: 200px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* 타이틀 바 */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  height: 70px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.live-time {
+  font-size: 16px;
+  position: absolute;
+  left: 20px;
+  color: #ccc;
+}
+
+/* 제목 링크 스타일 */
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color: white; /* 항상 흰색 */
+  text-decoration: none; /* 밑줄 제거 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lang-toggle {
+  position: absolute;
+  right: 20px;
+}
+
+.lang-box {
+  padding: 8px 12px;
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 레이아웃 */
+.main-layout {
+  display: flex;
+  height: calc(100vh - 70px); /* 타이틀 바를 제외한 전체 높이 */
+}
+
+.menu-bar {
+  width: 240px;
+  background-color: #2c3e50;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-content {
+  padding: 20px;
+}
+
+.section h3 {
+  color: white;
+  background-color: #34495e;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #3a3f47; /* 기본 배경색 */
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+/* 활성화된 리스트 스타일 */
+.section li.active {
+  background-color: #ff6b6b; /* 활성화된 배경색 */
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+/* 지도와 실시간 속보 */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.map-news-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; /* 두 박스 사이 공간 확보 */
+}
+
+.map-section, .news-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.map-image {
+  width: 100%;
+  height: calc(100% - 50px); /* 제목 아래 공간을 모두 차지 */
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.news-list {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  overflow-y: auto; /* 스크롤 가능 */
+}
+
+.news-list li {
+  margin-bottom: 10px;
+}
+
+/* 링크 스타일 (리스트 링크) */
+.menu-item {
+  color: white; /* 링크 글씨는 항상 흰색 */
+  text-decoration: none; /* 밑줄 제거 */
+  flex: 1; /* 전체 박스 내부에서 유연하게 차지 */
+}
+
+/* 방문한 링크도 항상 흰색 유지 */
+.menu-item:visited {
+  color: white; /* 방문한 후에도 흰색 유지 */
+}
+
+/* 링크 호버 효과 */
+.menu-item:hover {
+  text-decoration: none; /* 호버 시에도 밑줄 제거 */
+}
+
+/* 제목 링크 호버 및 방문 상태 */
+.title:hover,
+.title:visited {
+  color: white; /* 방문 및 호버 상태에서도 흰색 유지 */
+  text-decoration: none; /* 밑줄 제거 */
+}

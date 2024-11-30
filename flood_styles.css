@@ -1,0 +1,39 @@
+/* 홍수 페이지 전용 스타일 */
+.flood-info-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .flood-warning, .flood-map {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .flood-warning h3, .flood-map h3 {
+    margin-bottom: 15px;
+  }
+  
+  .flood-warning ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .flood-warning li {
+    margin-bottom: 10px;
+  }
+  
+  .flood-map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  

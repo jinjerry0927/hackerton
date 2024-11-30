@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산사태 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landslide.styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="landslide.html" class="menu-item active" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="landslide-info-wrapper">
+        <!-- 산사태 경고 -->
+        <div class="landslide-warning">
+          <h3>산사태 경고</h3>
+          <p>경주시 산악 지역에서 산사태 위험이 높아지고 있습니다.</p>
+          <ul>
+            <li><strong>위험 지역:</strong> 불국사 뒷산, 토함산 일대</li>
+            <li><strong>원인:</strong> 최근 집중호우로 인해 지반 약화</li>
+            <li><strong>대피 권고:</strong> 산악 지역 주민과 등산객</li>
+          </ul>
+        </div>
+
+        <!-- 산사태 영향 지도 -->
+        <div class="landslide-map">
+          <h3>산사태 위험 지역</h3>
+          <img src="landslide-map.png" alt="산사태 위험 지역 지도" class="landslide-map-image">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

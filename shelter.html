@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대피소 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="shelter_styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item active" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="shelter-info-wrapper">
+        <!-- 사용자 위치 기반 대피소 -->
+        <div class="nearest-shelter">
+          <h3>가장 가까운 대피소</h3>
+          <p>사용자 위치를 기반으로 계산 중...</p>
+          <ul>
+            <li><strong>대피소 이름:</strong> 경주 중앙 대피소</li>
+            <li><strong>거리:</strong> 1.2km</li>
+            <li><strong>소요 시간:</strong> 도보로 약 15분</li>
+          </ul>
+        </div>
+
+        <!-- 대피소 인원 수 -->
+        <div class="shelter-occupancy">
+          <h3>대피소 인원 수</h3>
+          <p>현재 대피소 상태:</p>
+          <ul>
+            <li><strong>경주 중앙 대피소:</strong> 124명</li>
+            <li><strong>형산강 대피소:</strong> 87명</li>
+            <li><strong>불국사 대피소:</strong> 54명</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

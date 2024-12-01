@@ -6,6 +6,8 @@
   <title>대피소 - 경주 재난 알림이</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="shelter.styles.css">
+  <!-- 카카오맵 스크립트 -->
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
   <header class="top-bar">
@@ -25,9 +27,10 @@
             <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
             <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
             <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
             <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
             <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
-            <li><a href="shelter.html" class="menu-item active" data-page="shelter">🏠 대피소</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
           </ul>
         </div>
       </div>
@@ -39,12 +42,27 @@
         <div class="shelter-location box-with-line">
           <h3>위치 기반 제일 가까운 대피소</h3>
           <p>현재 위치를 기반으로 가장 가까운 대피소를 계산 중입니다...</p>
-          <ul>
-            <li><strong>추천 대피소:</strong> 불국사 공원 대피소</li>
-            <li><strong>거리:</strong> 1.2km</li>
-            <li><strong>대피소 연락처:</strong> 054-123-4567</li>
-            <li><strong>대피소 수용 가능 인원:</strong> 200명</li>
-          </ul>
+
+          <!-- 카카오 지도 추가 -->
+          <div id="daumRoughmapContainer1733011088797" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              "timestamp": "1733011088797",
+              "key": "2mduh",
+              "mapWidth": "100%",
+              "mapHeight": "300"
+            }).render();
+          </script>
+
+          <!-- 시설 정보 -->
+          <div class="facility-info">
+            <h4>시설 정보</h4>
+            <ul>
+              <li><strong>시설:</strong> e편한세상아파트 지하 1층 주차장 (공공시설)</li>
+              <li><strong>규모:</strong> 31,950㎡</li>
+              <li><strong>최대 수용인원:</strong> 38,727명</li>
+            </ul>
+          </div>
         </div>
 
         <!-- 현재 대피소 인원수 및 정보 박스 -->
@@ -87,7 +105,6 @@
             </tbody>
           </table>
         </div>
-      </div>
     </main>
   </div>
 

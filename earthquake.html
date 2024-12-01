@@ -24,7 +24,8 @@
           <ul>
             <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
             <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
-            <li><a href="earthquake.html" class="menu-item active" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
             <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
             <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
             <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
@@ -36,78 +37,67 @@
     <main class="content">
       <div class="earthquake-info-wrapper">
         <!-- 현재 지역별 진도 조회 박스 -->
-        <div class="earthquake-intensity box-with-line">
+        <div class="current-intensity box-with-line">
           <h3>현재 지역별 진도 조회</h3>
-          <table>
+
+          <!-- 이미지 -->
+          <img src="earthquake.png" alt="현재 지역별 진도 이미지" class="earthquake-image">
+
+          <!-- 표 -->
+          <table class="earthquake-table">
             <thead>
               <tr>
                 <th>지역</th>
-                <th>현재 진도</th>
-                <th>피해 가능성</th>
+                <th>진도</th>
+                <th>상태</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>경주시 중심</td>
-                <td>3.5</td>
-                <td>미미함</td>
+                <td>4.2</td>
+                <td>위험</td>
               </tr>
               <tr>
                 <td>불국사 지역</td>
-                <td>4.0</td>
-                <td>경미한 피해 가능</td>
-              </tr>
-              <tr>
-                <td>양동마을</td>
-                <td>3.2</td>
-                <td>없음</td>
-              </tr>
-              <tr>
-                <td>안강읍</td>
-                <td>4.5</td>
-                <td>약간의 피해 가능</td>
+                <td>3.8</td>
+                <td>주의</td>
               </tr>
               <tr>
                 <td>감포읍</td>
-                <td>5.0</td>
-                <td>건물 균열 가능</td>
+                <td>2.5</td>
+                <td>정상</td>
+              </tr>
+              <tr>
+                <td>안강읍</td>
+                <td>3.0</td>
+                <td>주의</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <!-- 과거 지진 활동 박스 -->
-        <div class="earthquake-history box-with-line">
+        <div class="past-earthquake box-with-line">
           <h3>과거 지진 활동</h3>
-          <ul>
+          <ul class="past-earthquake-list">
             <li>
-              <strong>2023년 3월 15일:</strong> 경주시 북부 진도 4.8 지진 발생.
-              <br>피해: <em>건물 균열 15건</em>, 복구 비용 <em>1억 원</em>.
+              <span class="date">2023년 4월 12일</span>
+              <span class="event">경주시 중심부, 규모 4.3 지진 발생</span>
+              <p class="details">피해: <strong>경미한 구조물 손상</strong></p>
             </li>
             <li>
-              <strong>2021년 8월 23일:</strong> 감포읍 진도 5.2 지진 기록.
-              <br>피해: <em>주택 3채 붕괴</em>, 인명 피해 없음.
+              <span class="date">2021년 8월 30일</span>
+              <span class="event">감포읍, 규모 3.5 지진 발생</span>
+              <p class="details">대응: <strong>주민 대피 권고</strong></p>
             </li>
             <li>
-              <strong>2019년 11월 12일:</strong> 불국사 지역 진도 3.8 지진.
-              <br>경미한 피해: <em>나무 쓰러짐</em>.
-            </li>
-            <li>
-              <strong>2016년 9월 12일:</strong> 경주시 전역 진도 5.8 지진 발생.
-              <br>피해: <em>대규모 건물 손상</em>, 대피 인원 <em>20,000명</em>.
+              <span class="date">2020년 12월 15일</span>
+              <span class="event">불국사 근처, 규모 4.1 지진 발생</span>
+              <p class="details">복구: <strong>48시간 내 완료</strong></p>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="action-guide">
-        <h3>지진 발생 시 행동요령</h3>
-        <ul>
-          <li><strong>1.</strong> 책상이나 튼튼한 가구 아래로 대피하세요.</li>
-          <li><strong>2.</strong> 실내에서는 머리를 보호하고 가만히 있으세요.</li>
-          <li><strong>3.</strong> 실외에서는 건물, 전선, 나무에서 멀리 떨어지세요.</li>
-          <li><strong>4.</strong> 진동이 멈춘 후 안전한 장소로 이동하세요.</li>
-          <li><strong>5.</strong> 대피 후에는 가스와 전기를 차단하세요.</li>
-        </ul>
       </div>
     </main>
   </div>

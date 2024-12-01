@@ -22,9 +22,10 @@
         <div class="section">
           <h3>재난 상황</h3>
           <ul>
-            <li><a href="flood.html" class="menu-item active" data-page="flood">🌊 홍수</a></li>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
             <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
             <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
             <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
             <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
             <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
@@ -36,79 +37,63 @@
     <main class="content">
       <div class="flood-info-wrapper">
         <!-- 경주 지역 강수량 박스 -->
-        <div class="flood-rainfall box-with-line">
+        <div class="rainfall-info box-with-line">
           <h3>경주 지역 강수량</h3>
-          <table>
+
+          <!-- 이미지 -->
+          <img src="water.jpg" alt="경주 지역 강수량 이미지" class="rainfall-image">
+
+          <!-- 표 -->
+          <table class="rainfall-table">
             <thead>
               <tr>
                 <th>지역</th>
-                <th>1시간 강수량</th>
-                <th>누적 강수량</th>
+                <th>강수량 (mm)</th>
+                <th>상태</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>경주시 중심</td>
-                <td>25mm</td>
-                <td>120mm</td>
+                <td>120</td>
+                <td>위험</td>
               </tr>
               <tr>
                 <td>불국사 지역</td>
-                <td>30mm</td>
-                <td>140mm</td>
-              </tr>
-              <tr>
-                <td>양동마을</td>
-                <td>20mm</td>
-                <td>110mm</td>
-              </tr>
-              <tr>
-                <td>안강읍</td>
-                <td>15mm</td>
-                <td>100mm</td>
+                <td>95</td>
+                <td>주의</td>
               </tr>
               <tr>
                 <td>감포읍</td>
-                <td>10mm</td>
-                <td>85mm</td>
+                <td>70</td>
+                <td>정상</td>
               </tr>
             </tbody>
           </table>
         </div>
-      
+
         <!-- 과거 특보 박스 -->
-        <div class="flood-alert box-with-line">
+        <div class="past-warning box-with-line">
           <h3>과거 특보</h3>
-          <ul>
+          <ul class="past-warning-list">
             <li>
-              <strong>2023년 7월 15일:</strong> 집중호우로 경주시 형산강 범람 경고.
-              <br>누적 강수량: <em>300mm</em>, 피해 신고: <em>1,500건</em>
+              <span class="date">2023년 6월 22일</span>
+              <span class="event">형산강 범람 경고</span>
+              <p class="details">조치: <strong>주민 대피 권고</strong>, 피해 최소화</p>
             </li>
             <li>
-              <strong>2022년 8월 12일:</strong> 태풍 '힌남노' 북상으로 전 지역 호우주의보.
-              <br>최대 순간 강수량: <em>80mm/h</em>, 대피소 운영.
+              <span class="date">2022년 8월 15일</span>
+              <span class="event">경주시 중심부 집중호우</span>
+              <p class="details">결과: <strong>침수 피해</strong>, 복구 완료</p>
             </li>
             <li>
-              <strong>2021년 9월 3일:</strong> 국지성 호우로 경주시 북부 침수 피해.
-              <br>강수량: <em>200mm</em>, 복구 작업 1주일 소요.
-            </li>
-            <li>
-              <strong>2020년 6월 30일:</strong> 형산강 주변 홍수 경보 발령.
-              <br>피해 지역: <em>불국사 주변</em>, 피해 규모: <em>250가구</em>
+              <span class="date">2021년 7월 3일</span>
+              <span class="event">불국사 지역 강우량 초과</span>
+              <p class="details">사유: <strong>계속된 폭우</strong>, 대비 필수</p>
             </li>
           </ul>
         </div>
       </div>
-      <div class="action-guide">
-        <h3>홍수 발생 시 행동요령</h3>
-        <ul>
-          <li><strong>1.</strong> 높은 지대로 대피하세요.</li>
-          <li><strong>2.</strong> 물이 찬 도로를 절대 건너지 마세요.</li>
-          <li><strong>3.</strong> 전기와 가스 공급을 차단하세요.</li>
-          <li><strong>4.</strong> 지역 방송 및 경보 시스템을 확인하세요.</li>
-          <li><strong>5.</strong> 가까운 대피소로 이동하세요.</li>
-        </ul>
-      </div>  
     </main>
   </div>
 

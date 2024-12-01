@@ -28,31 +28,68 @@
   color: #2c3e50;
 }
 
-/* 대피소 정보 테이블 */
-.shelter-status table {
+/* 지도 크기 조정 */
+.root_daum_roughmap {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+  height: 300px;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
-.shelter-status th, .shelter-status td {
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
+/* 시설 정보 스타일 */
+.facility-info {
+  margin-top: 20px;
 }
 
-.shelter-status th {
-  background-color: #f5f5f5;
+.facility-info h4 {
+  font-size: 16px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-/* 위치 기반 리스트 */
-.shelter-location ul {
+.facility-info ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.shelter-location li {
-  margin-bottom: 10px;
+.facility-info li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.shelter-status table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 경계선 제거 및 통합 */
+  margin-top: 10px;
+}
+
+.shelter-status th, .shelter-status td {
+  padding: 10px;
+  text-align: left; /* 텍스트 정렬 */
+  border: 1px solid #ddd; /* 테이블 셀 경계선 */
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+}
+
+.shelter-status th {
+  background-color: #f5f5f5; /* 머리글 배경색 */
+  font-weight: bold;
+}
+
+.shelter-status td {
+  background-color: #fff; /* 내용 배경색 */
+}
+
+/* 테이블 열 너비 비율 설정 */
+.shelter-status th:nth-child(1), .shelter-status td:nth-child(1) {
+  width: 40%; /* 대피소 이름 */
+}
+
+.shelter-status th:nth-child(2), .shelter-status td:nth-child(2),
+.shelter-status th:nth-child(3), .shelter-status td:nth-child(3) {
+  width: 20%; /* 현재 인원, 수용 가능 인원 */
+}
+
+.shelter-status th:nth-child(4), .shelter-status td:nth-child(4) {
+  width: 20%; /* 비고 */
 }

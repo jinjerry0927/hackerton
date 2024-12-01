@@ -23,8 +23,9 @@
           <h3>재난 상황</h3>
           <ul>
             <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
-            <li><a href="typhoon.html" class="menu-item active" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
             <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
             <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
             <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
             <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
@@ -35,40 +36,44 @@
 
     <main class="content">
       <div class="typhoon-info-wrapper">
-        <!-- 태풍 경로도 박스 -->
+        <!-- 태풍 경로 박스 -->
         <div class="typhoon-path box-with-line">
-          <h3>태풍 경로도</h3>
-          <img src="typhoon_example.gif" alt="태풍 경로도" class="typhoon-path-image">
-          <p>현재 태풍은 경주시 남동쪽으로 접근 중입니다. 예상 경로는 기상청 데이터를 기반으로 분석되었습니다.</p>
-          <ul>
-            <li><strong>현재 위치:</strong> 동경 129.1°, 북위 35.7°</li>
-            <li><strong>진행 속도:</strong> 20km/h 북서 방향</li>
-            <li><strong>중심 기압:</strong> 950hPa</li>
-            <li><strong>강풍 반경:</strong> 300km</li>
-          </ul>
+          <h3>태풍 경로</h3>
+          <img src="typhoon.example.gif" alt="태풍 경로 이미지" class="typhoon-image">
+          
+          <!-- 태풍 경로 및 속도 정보 -->
+          <div class="typhoon-details">
+            <ul>
+              <li><strong>현재 위치:</strong> 경주시 북동쪽 30km</li>
+              <li><strong>풍속:</strong> 140km/h</li>
+              <li><strong>중심 기압:</strong> 960hPa</li>
+              <li><strong>예상 이동 경로:</strong> 북서쪽으로 시속 20km 이동</li>
+              <li><strong>피해 예상:</strong> 경주시 전역 강풍 및 폭우</li>
+            </ul>
+          </div>
         </div>
 
         <!-- 피해 예상 지역 박스 -->
-        <div class="typhoon-damage box-with-line">
+        <div class="typhoon-affected box-with-line">
           <h3>피해 예상 지역</h3>
-          <p>인공지능과 지난 데이터를 기반으로 피해 예상 지역을 분석 중입니다...</p>
-          <ul>
-            <li><strong>형산강 주변:</strong> 침수 피해 예상</li>
-            <li><strong>불국사 지역:</strong> 강풍으로 인한 나무 쓰러짐 위험</li>
-            <li><strong>안강읍:</strong> 도로 통제 가능성</li>
-            <li><strong>양동마을:</strong> 전력 공급 중단 가능</li>
+          <ul class="typhoon-affected-list">
+            <li>
+              <span class="date">2023년 8월 10일</span>
+              <span class="event">경주시 남부 지역, 강풍 및 폭우 피해 예상</span>
+              <p class="details">상세 내용: <strong>저지대 침수 가능성 높음, 주민 대피 권고</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 8월 11일</span>
+              <span class="event">감포읍 해안가, 높은 파도 및 강풍 피해 예상</span>
+              <p class="details">상세 내용: <strong>해안가 접근 금지, 방파제 정비 필요</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 8월 12일</span>
+              <span class="event">불국사 지역, 산사태 발생 가능성</span>
+              <p class="details">상세 내용: <strong>산사태 취약 지역 주민 철수 권고</strong></p>
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="action-guide">
-        <h3>태풍 발생 시 행동요령</h3>
-        <ul>
-          <li><strong>1.</strong> 창문과 문을 고정하고 강풍에 대비하세요.</li>
-          <li><strong>2.</strong> 외출을 삼가고 안전한 실내에 머무르세요.</li>
-          <li><strong>3.</strong> 대피소 위치를 사전에 파악하세요.</li>
-          <li><strong>4.</strong> 차량 이동을 피하고 저지대로 가지 마세요.</li>
-          <li><strong>5.</strong> 지역 방송 및 기상 경보를 확인하세요.</li>
-        </ul>
       </div>
     </main>
   </div>

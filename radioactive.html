@@ -17,6 +17,7 @@
   </header>
 
   <div class="main-layout">
+    <!-- 메뉴바 -->
     <aside class="menu-bar">
       <div class="menu-content">
         <div class="section">
@@ -25,6 +26,7 @@
             <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
             <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
             <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
             <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
             <li><a href="radioactive.html" class="menu-item active" data-page="radioactive">☢️ 방사능</a></li>
             <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
@@ -33,81 +35,47 @@
       </div>
     </aside>
 
+    <!-- 메인 콘텐츠 -->
     <main class="content">
-      <div class="radioactive-info-wrapper">
-        <!-- 지역별 방사능 수치 박스 -->
-        <div class="radioactive-level box-with-line">
-          <h3>지역별 방사능 수치</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>지역</th>
-                <th>방사능 수치 (μSv/h)</th>
-                <th>상태</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>경주시 중심</td>
-                <td>0.10</td>
-                <td>정상</td>
-              </tr>
-              <tr>
-                <td>불국사 지역</td>
-                <td>0.15</td>
-                <td>정상</td>
-              </tr>
-              <tr>
-                <td>양동마을</td>
-                <td>0.25</td>
-                <td>주의</td>
-              </tr>
-              <tr>
-                <td>안강읍</td>
-                <td>0.40</td>
-                <td>위험</td>
-              </tr>
-              <tr>
-                <td>감포읍</td>
-                <td>0.35</td>
-                <td>위험</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 과거 방사능 누출 사건 박스 -->
-        <div class="radioactive-history box-with-line">
-          <h3>과거 방사능, 누출 사건</h3>
-          <ul>
-            <li>
-              <strong>2023년 5월 12일:</strong> 불국사 근처 방사능 누출.
-              <br>원인: <em>폐기물 저장소의 파손</em>, 누출량: <em>0.3μSv/h</em>.
-            </li>
-            <li>
-              <strong>2021년 10월 7일:</strong> 감포읍 원자력 발전소 경미한 방사능 유출.
-              <br>대응: <em>24시간 내 긴급 복구 완료</em>, 영향 없음.
-            </li>
-            <li>
-              <strong>2019년 3월 25일:</strong> 경주시 북부 지역 방사능 측정치 상승.
-              <br>원인: <em>산업 폐기물 처리장 오작동</em>.
-            </li>
-            <li>
-              <strong>2016년 8월 15일:</strong> 감포읍 원전 냉각수 유출 사고.
-              <br>복구 기간: <em>3주</em>, 영향 지역: <em>10km 이내</em>.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="action-guide">
-        <h3>방사능 누출 시 행동요령</h3>
-        <ul>
-          <li><strong>1.</strong> 실내로 대피하고 문과 창문을 닫아 밀폐하세요.</li>
-          <li><strong>2.</strong> 외출 시 보호복과 마스크를 착용하세요.</li>
-          <li><strong>3.</strong> 음식과 물은 밀폐된 상태에서 섭취하세요.</li>
-          <li><strong>4.</strong> 방사능 경보 시스템을 통해 안전 정보를 확인하세요.</li>
-          <li><strong>5.</strong> 대피 지시에 따라 지정된 대피소로 이동하세요.</li>
-        </ul>
+      <div class="radioactive-info box-with-line">
+        <h3>지역별 방사선 수치</h3>
+        <p>아래는 경주시의 주요 지역별 방사선 수치와 상태입니다.</p>
+        <table class="radioactive-table">
+          <thead>
+            <tr>
+              <th>지역</th>
+              <th>방사선 수치 (μSv/h)</th>
+              <th>상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>경주시 중심</td>
+              <td>0.08</td>
+              <td>정상</td>
+            </tr>
+            <tr>
+              <td>불국사</td>
+              <td>0.12</td>
+              <td>주의</td>
+            </tr>
+            <tr>
+              <td>감포읍</td>
+              <td>0.25</td>
+              <td>위험</td>
+            </tr>
+            <tr>
+              <td>외동읍</td>
+              <td>0.15</td>
+              <td>주의</td>
+            </tr>
+            <tr>
+              <td>월성 원자력 발전소</td>
+              <td>0.35</td>
+              <td>위험</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </main>
   </div>

@@ -25,7 +25,8 @@
             <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
             <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
             <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
-            <li><a href="landslide.html" class="menu-item active" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
             <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
             <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
           </ul>
@@ -35,69 +36,63 @@
 
     <main class="content">
       <div class="landslide-info-wrapper">
-        <!-- 지역별 산사태 알림 박스 -->
-        <div class="landslide-alert box-with-line">
-          <h3>지역별 산사태 알림</h3>
-          <table>
+        <!-- 실시간 산사태 상황 박스 -->
+        <div class="real-time-landslide box-with-line">
+          <h3>실시간 산사태 상황</h3>
+
+          <!-- 이미지 추가 -->
+          <img src="landslide.jpg" alt="실시간 산사태 상황 이미지" class="landslide-image">
+
+          <!-- 표 -->
+          <table class="landslide-table">
             <thead>
               <tr>
                 <th>지역</th>
                 <th>상태</th>
-                <th>설명</th>
+                <th>알림</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>경주시 중심</td>
-                <td>정상</td>
-                <td>산사태 가능성 없음</td>
-              </tr>
-              <tr>
-                <td>불국사 지역</td>
-                <td>주의</td>
-                <td>산사태 주의 필요</td>
-              </tr>
-              <tr>
-                <td>양동마을</td>
-                <td>정상</td>
-                <td>산사태 가능성 없음</td>
-              </tr>
-              <tr>
-                <td>안강읍</td>
+                <td>불국사</td>
                 <td>위험</td>
-                <td>즉각 대피 필요</td>
+                <td>산사태 발생 가능성 높음</td>
+              </tr>
+              <tr>
+                <td>경주시 남부</td>
+                <td>주의</td>
+                <td>강우로 인한 취약 지역</td>
               </tr>
               <tr>
                 <td>감포읍</td>
-                <td>주의</td>
-                <td>산사태 가능성 있음</td>
+                <td>정상</td>
+                <td>문제 없음</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <!-- 산사태 예측 가능 지역 박스 -->
-        <div class="landslide-prediction box-with-line">
+        <div class="predicted-landslide box-with-line">
           <h3>산사태 예측 가능 지역</h3>
-          <p>인공지능 분석과 지난 데이터를 통해 산사태 위험 지역을 예측 중입니다...</p>
-          <ul>
-            <li><strong>불국사:</strong> 60% 위험</li>
-            <li><strong>안강읍:</strong> 90% 위험</li>
-            <li><strong>감포읍:</strong> 75% 위험</li>
-            <li><strong>양동마을:</strong> 30% 위험</li>
-            <li><strong>경주시 중심:</strong> 10% 위험</li>
+          <ul class="landslide-prediction-list">
+            <li>
+              <span class="date">2023년 6월 22일</span>
+              <span class="event">경주시 북부 지역 산사태 위험</span>
+              <p class="details">사유: <strong>연속 강우로 인한 토양 침식</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 6월 23일</span>
+              <span class="event">감포읍 해안 지역 산사태 주의</span>
+              <p class="details">사유: <strong>지반 약화</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 6월 24일</span>
+              <span class="event">불국사 근처 산사태 가능성</span>
+              <p class="details">사유: <strong>비탈면 불안정</strong></p>
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="action-guide">
-        <h3>산사태 발생 시 행동요령</h3>
-        <ul>
-          <li><strong>1.</strong> 산사태 경보가 발령되면 즉시 고지대에서 멀리 대피하세요.</li>
-          <li><strong>2.</strong> 비탈면이나 급경사지에 접근하지 마세요.</li>
-          <li><strong>3.</strong> 폭우 시에는 산사태 위험 지역을 피하세요.</li>
-          <li><strong>4.</strong> 도로에 토사물이 쌓이면 차량 운행을 피하세요.</li>
-          <li><strong>5.</strong> 라디오나 지역 방송을 통해 정보를 확인하세요.</li>
-        </ul>
       </div>
     </main>
   </div>

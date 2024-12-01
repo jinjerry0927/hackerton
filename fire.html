@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화재 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="fire.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <!-- 메뉴바 -->
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item active" data-page="fire">🔥 화재</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="content">
+      <div class="fire-info-wrapper">
+        <!-- 현재 화재 상태 박스 -->
+        <div class="current-fire box-with-line">
+          <h3>현재 화재 상태</h3>
+          <!-- 이미지 -->
+          <img src="fire.png" alt="현재 화재 상태 이미지" class="fire-image">
+          <!-- 화재 상태 표 -->
+          <table class="fire-status-table">
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>화재 규모</th>
+                <th>진화 상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>경주시 북부</td>
+                <td>500㎡</td>
+                <td>진화 중 (50%)</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>300㎡</td>
+                <td>완전 진화</td>
+              </tr>
+              <tr>
+                <td>불국사</td>
+                <td>700㎡</td>
+                <td>진화 중 (80%)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 과거 화재 사건 박스 -->
+        <div class="past-fire box-with-line">
+          <h3>과거 화재 사건</h3>
+          <ul class="past-fire-list">
+            <li>
+              <span class="date">2023년 7월 12일</span>
+              <span class="event">불국사 인근 대형 산불</span>
+              <p class="details">피해 규모: <strong>1200㎡</strong>, 원인: <strong>부주의한 쓰레기 소각</strong></p>
+            </li>
+            <li>
+              <span class="date">2022년 5월 9일</span>
+              <span class="event">경주시 중심가 주택 화재</span>
+              <p class="details">피해: <strong>3가구 전소</strong>, 원인: <strong>누전</strong></p>
+            </li>
+            
